@@ -13,6 +13,7 @@ export default () => {
     authenticate(email, password)
       .then(data => {
         console.log('Logged in!', data);
+        window.location.reload()
       })
       .catch(err => {
         console.error('Failed to login!', err);
